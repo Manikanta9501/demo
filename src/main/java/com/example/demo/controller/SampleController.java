@@ -32,5 +32,9 @@ public class SampleController {
     {
         return msg;
     }
-    
+    @GetMapping("/pathvariable/{testing}")
+    public String testing(@PathVariable String msg)
+    {
+        return msg;
+    }
 }
