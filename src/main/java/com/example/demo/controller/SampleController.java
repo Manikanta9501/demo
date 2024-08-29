@@ -27,5 +27,10 @@ public class SampleController {
         
         return post.toUpperCase();
     }
+    @GetMapping("/pathvariable/{msg1}")
+    public String mes1(@PathVariable String msg)
+    {
+        return msg;
+    }
     
 }
